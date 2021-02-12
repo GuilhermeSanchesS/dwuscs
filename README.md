@@ -19,7 +19,7 @@
 </p>
 
 # 📖 Sobre
-<p>Este repoistorio tem como objetivo facilitar oas alunos na máteria Desenvlovimento para Web: Tem por objetivo criar um sistema capaz de realizar pedidos em uma pizzaria fictícia. Durante o desenvolvimento foi criada uma 
+<p>Este repoistorio tem como objetivo facilitar oas alunos na máteria Desenvlovimento para Web. Durante o desenvolvimento foi criada uma 
 API com quatros métodos:</p>
 
 - GET ;
