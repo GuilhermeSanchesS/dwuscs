@@ -65,6 +65,7 @@ API com quatros métodos:</p>
 <table>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/guilherme-sanches-sim%C3%B5es-4b28b0135/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/62891985?s=460&u=0a10365bfb4c5ef1f5ac4e83a8caedb609f5c3aa&v=4" width="100px;" alt=""/><br /><sub><b>Guilherme Sanches Simões</b></sub></a><br /><a href="https://www.uscs.edu.br/" title="USCS">👨‍🚀</a></td>
+    <td align="center"><a href="https://www.uscs.edu.br/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69228830?s=460&u=9324507dd80cce3c9eed33b3d5f53dc464bfd7e2&v=4" width="100px;" alt=""/><br /><sub><b>Laryssa Biroli </b></sub></a><br /><a href="https://www.uscs.edu.br/" title="USCS">👨‍🚀</a></td>
   </tr>
 </table>
 
