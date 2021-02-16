@@ -23,16 +23,16 @@
 API com quatros métodos:</p>
 
 - GET ;
-- GET /mensagem1;
 - POST ;
 - PUT ;
+- DELETE
 
 <h1>🛠 Tecnologias</h1>
 
 - Front-end e mobile:
   - HTML / CSS / JS 
   - Express
- 
+  - Nodemon
 
 <h1>👨‍💻 Instalação</h1>
 <p>Para a instalação das ferramentas que foram necessárias para o desenvolvimento do projeto, segue uma lista de links abaixo:</p>
