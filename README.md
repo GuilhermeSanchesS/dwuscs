@@ -44,16 +44,10 @@ API com quatros métodos:</p>
   
 - Prompt
 
-  - 1º Passo
-  
-  ```bash
+```bash
   git clone https://github.com/GuilhermeSanchesS/dwuscs.git
-  ```
-  - 2º Passo
+```
   
-  ```bash
-  npm install -d
-  ```
 <br>
 <br>
 <h4 align="center"> 
