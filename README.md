@@ -10,6 +10,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=npm&message=6.14.6&color=C53534&style=flat-square&logo=npm"/>
   <img src="https://img.shields.io/static/v1?label=express&message=^4.17.1&color=000000&style=flat-square&logo=express"/>
+  <img src="https://img.shields.io/static/v1?label=nodemon&message=^2.0.7&color=76d04b&style=flat-square&logo=nodemon"/>
 </p>
 
 <p align="center">
@@ -31,8 +32,8 @@ API com quatros métodos:</p>
 
 - Front-end e mobile:
   - HTML / CSS / JS 
-  - Express
-  - Nodemon
+  - [Express](https://expressjs.com/pt-br/)
+  - [Nodemon](https://nodemon.io/)
 
 <h1>👨‍💻 Instalação</h1>
 <p>Para a instalação das ferramentas que foram necessárias para o desenvolvimento do projeto, segue uma lista de links abaixo:</p>
