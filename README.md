@@ -30,7 +30,7 @@ API com quatros métodos:</p>
 
 <h1>🛠 Tecnologias</h1>
 
-- Front-end e mobile:
+- Back-end:
   - HTML / CSS / JS 
   - [Express](https://expressjs.com/pt-br/)
   - [Nodemon](https://nodemon.io/)
