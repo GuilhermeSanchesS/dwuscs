@@ -43,7 +43,7 @@ API com quatros métodos:</p>
 - Instalar
   - [Node.js](http://nodejs.org/)
   - [VSCode](https://code.visualstudio.com/)
-  - [Postman](https://www.postman.com/) & [Insomnia](https://insomnia.rest/changelog)
+  - [Postman](https://www.postman.com/) OU [Insomnia](https://insomnia.rest/changelog)
   
 - Prompt
 
