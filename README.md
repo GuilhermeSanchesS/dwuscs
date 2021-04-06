@@ -10,6 +10,7 @@
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=npm&message=6.14.6&color=C53534&style=flat-square&logo=npm"/>
   <img src="https://img.shields.io/static/v1?label=express&message=^4.17.1&color=000000&style=flat-square&logo=express"/>
+  <img src="https://img.shields.io/static/v1?label=mongodb&message=^3.6.5&color=94C10C&style=flat-square&logo=mongodb"/>
   <img src="https://img.shields.io/static/v1?label=nodemon&message=^2.0.7&color=76d04b&style=flat-square&logo=nodemon"/>
 </p>
 
@@ -34,6 +35,7 @@ API com quatros métodos:</p>
   - HTML / CSS / JS 
   - [Express](https://expressjs.com/pt-br/)
   - [Nodemon](https://nodemon.io/)
+  - [Mongodb Compass](https://www.mongodb.com/try/download/compass)
 
 <h1>👨‍💻 Instalação</h1>
 <p>Para a instalação das ferramentas que foram necessárias para o desenvolvimento do projeto, segue uma lista de links abaixo:</p>
@@ -41,7 +43,7 @@ API com quatros métodos:</p>
 - Instalar
   - [Node.js](http://nodejs.org/)
   - [VSCode](https://code.visualstudio.com/)
-  - [Postman](https://www.postman.com/)
+  - [Postman](https://www.postman.com/) & [Insomnia](https://insomnia.rest/changelog)
   
 - Prompt
 
