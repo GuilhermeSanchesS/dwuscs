@@ -27,35 +27,62 @@ const { Objectcodigo } = require('mongodb');
     //Read All (Ler Tudo)
     app.get('/professors', async (req, res) => {
         res.send(await professors.find().toArray())
-    })
+    });
 
-    //Read Single (Ler indivcodigoual)
-    app.get('/professors/:quant',async(req,res)=>{
-        const mens = await professors.find().toArray()
-        res.send(mens)
-     });
-
-    //Read Single (Ler indivcodigoual)
-    app.get('/professors/:codigo',async(req,res)=>{
-        const codigo= req.params.codigo;
-        const mens = await professors.findOne({_codigo: Objectcodigo(codigo)})
-        res.send(mens)
-        
-     });
+    //Ex01.1
+    app.get('/professorIn',async(req,res)=>{
+        criterio= {_codigo: {$regex:/^in/}};
+        const mens = await professors.find(criterio).toArray();
+        res.send(mens);
+    });
+    //Ex01.2
+    app.get('/professorDeT',async(req,res)=>{
+        criterio= {_codigo: {$regex:/^det/}};
+        const mens = await professors.find(criterio).toArray();
+        res.send(mens);
+    });
+    //Ex01.3
+    app.get('/professor1/:min&:max',async(req,res)=>{
+        const min = parseInt(req.params.min);
+        const max = parseInt(req.params.max);
+        const criterio= {$and:[{"hourly": {$gte: min}},{"hourly": {$lte: max}}]};
+        const propriedades = {"name":1, "hourly":1};
+        const mens = await professors.find(criterio).project(propriedades).toArray();
+        res.send(mens);
+    });
+    //Ex01.4
+    app.get('/professor2',async(req,res)=>{
+        const criterio= {"contract": "indeterminado"};
+        const propriedades = {"name":1,"level":1 , "letter":1};
+        const mens = await professors.find(criterio).project(propriedades).toArray();
+        res.send(mens);
+    });
+    //Ex01.5
+    app.get('/professor3',async(req,res)=>{
+        valor = /[a-m]/;
+        criterio= {"name": new RegExp(valor)};
+        propriedades = {"name":1, "hourly":1};
+        const mens = await professors.find(criterio).project(propriedades).toArray();
+        res.send(mens);
+    });
 
     //Altera indivcodigoual
-    app.put('/professors/:codigo',async(req,res)=>{
-        const codigo=req.params.codigo;
-        const professor = req.body
+    app.put('/professorIn/codigo',async(req,res)=>{
+        const atu= req.query.c;
+        const professor = req.body;
+
         const result = await professors.updateOne(
-        {
-            //_codigo: Objectcodigo(codigo)},
-            texto: codigo.toString()},
+            {
+                codigo: new RegExp(atu)
+            },
             {
                 $set: {...professor}
             }
-        )
-        res.send('Alteração indivcodigoual por codigo realizada com sucesso' + result);
+            ).then(result=>{
+            console.log('Foi atualizado %i item!',result.modifiedCount)
+            res.send('Atualização realizada com sucesso ');
+            return result;
+        }).catch(err => console.error('Falha ao atualizar documento(s):%s',err));
     });
 
     //Remover professor
@@ -82,9 +109,13 @@ const { Objectcodigo } = require('mongodb');
     //Criar várias professors
     app.post('/professors',async(req,res)=>{
         const professor=req.body
-        const resultado=await professors.insertMany(professor)
-        res.send('Professores criados com sucesso' + resultado.insertedCount)
+        const resultado=await professors.insertMany(professor).then(result => {
+            console.log('Itensinseridos: %i',resultado.insertedCount);
+            res.send('professores inseridos com sucesso '+ resultado.insertedCount);
+            return result;
+        }).catch(err => console.error('Falhaao Inserir Documentos:%s',err))
     })
+
 
     app.listen(PORT, () => {
         console.info(`Servcodigoor rodando em localhost:${PORT}`)
